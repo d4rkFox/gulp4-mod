@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'EBGaramond';
+  src: url("../fonts/EBGaramond-Italic.woff2") format("woff2"), url("../fonts/EBGaramond-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@-webkit-keyframes arrowUp {
+  from {
+  }
+  50% {
+  }
+  to {
+  }
+}
+
+@keyframes arrowUp {
+  from {
+  }
+  50% {
+  }
+  to {
+  }
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
+body {
+  position: relative;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.anchor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.header {
+  color: #9c9c9c;
+}
