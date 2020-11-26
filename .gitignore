@@ -3,6 +3,8 @@
 .LSOverride
 .vs
 
+app/js/*min.js
+app/index.html
 css/
 dist/
 node_modules/
