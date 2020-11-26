@@ -1,0 +1,101 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    position: relative;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.anchor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.arrow {
+    position: fixed;
+    right: calc(100vw / 2 - 625px);
+    bottom: 35px;
+    z-index: -1;
+    width: 59px;
+    height: 59px;
+    margin-top: -20px;
+    margin-left: auto;
+    background-color: #6ebbd3;
+    box-shadow: 0 0 10px 0 #fff;
+    opacity: 0;
+    transition: box-shadow 0.3s, opacity 0.5s;
+
+    &--active {
+        opacity: 1;
+    }
+
+    &--visibility {
+        z-index: 2;
+    }
+
+    &::before {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        width: 18px;
+        height: 18px;
+        content: '';
+        background-image: url(../images/arrow-up.svg);
+        background-repeat: no-repeat;
+        transform: translate(-50%, -50%);
+        animation: arrowUp 1.5s infinite;
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px 0 #6ebbd3;
+    }
+}
