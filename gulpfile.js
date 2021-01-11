@@ -51,8 +51,7 @@ function scripts() {
 
 function libsJs() {
     return src([
-        "node_modules/swiper/swiper-bundle.js",
-        "plugins/jquery.formstyler.js",
+        "node_modules/swiper/swiper-bundle.js"
     ])
         .pipe(babel())
         .pipe(concat("libs.min.js"))
@@ -82,8 +81,7 @@ function styles() {
 function libsCss() {
     return src([
         "node_modules/normalize.css/normalize.css",
-        "node_modules/swiper/swiper-bundle.css",
-        "plugins/jquery.formstyler.css",
+        "node_modules/swiper/swiper-bundle.css"
     ])
         .pipe(cssmin())
         .pipe(concat("libs.min.css"))

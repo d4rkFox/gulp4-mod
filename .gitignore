@@ -3,7 +3,7 @@
 .LSOverride
 .vs
 
-app/js/*min.js
+app/min.js/*min.js
 app/index.html
 css/
 dist/
